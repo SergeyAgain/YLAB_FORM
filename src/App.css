@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.message {
+  min-height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+.error {
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 12rem;
+  justify-content: space-between;
+}
+
+.form__label {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  font-size: large;
+  font-weight: 700;
+}
+
+.form__input {
+  flex-grow: 2;
+  padding-right: 2rem;
+  font-size: large;
+}
+
+.form__svg {
+  width: 1rem;
+}
+
+.form__submit {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.form__submit:hover {
+  color: red;
+}
+.form__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.svg-button {
+  position: absolute;
+  right: 0.5rem;
+  width: min-content;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.svg-button:focus {
+  border: none;
+  outline: none;
+}
