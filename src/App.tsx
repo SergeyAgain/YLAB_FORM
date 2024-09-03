@@ -7,7 +7,7 @@ function App() {
     <main>
       <h1>YLAB FORM</h1>
       <section>
-        <h2>Как бы база дпнных юзеров</h2>
+        <h2>Как бы база данных юзеров</h2>
         <UserList />
       </section>
       <Form />
