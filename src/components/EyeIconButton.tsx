@@ -8,7 +8,7 @@ export interface EyeIconButtonProps {
 export const EyeIconButton: FC<EyeIconButtonProps> = ({ isOpen, onClick }) => {
   const EyeIcon = isOpen ? OpenEyeIcon : CloseEyeIcon;
   return (
-    <button className="svg-button " onClick={onClick}>
+    <button type="button" className="svg-button" onClick={onClick}>
       <EyeIcon className="form__svg" />
     </button>
   );
